@@ -7,7 +7,7 @@ CUSTOM_BUCKET = "${BUCKET}"
 CUSTOM_REPO = "aws-greengrass/aws-greengrass-nucleus"
 CUSTOM_BRANCH = "main"
 CUSTOM_COMMIT = "0ec148cee406bf1147c6c625e42e01aef0e1e877"
-CUSTOM_URL = "s3://${CUSTOM_BUCKET}/${CUSTOM_REPO}/${CUSTOM_BRANCH}/${CUSTOM_COMMIT}/target/aws.greengrass.nucleus.zip"
+CUSTOM_URI = "s3://${CUSTOM_BUCKET}/${CUSTOM_REPO}/${CUSTOM_BRANCH}/${CUSTOM_COMMIT}/target/aws.greengrass.nucleus.zip"
 
 S                          = "${WORKDIR}"
 GG_BASENAME                = "greengrass/v2"
