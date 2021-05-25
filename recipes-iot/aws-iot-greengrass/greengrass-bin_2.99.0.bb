@@ -7,13 +7,13 @@ CUSTOM_BUCKET = "${BUCKET}"
 CUSTOM_REPO = "aws-greengrass/aws-greengrass-nucleus"
 CUSTOM_BRANCH = "main"
 CUSTOM_COMMIT = "0ec148cee406bf1147c6c625e42e01aef0e1e877"
-CUSTOM_URI = "s3://${CUSTOM_BUCKET}/${CUSTOM_REPO}/${CUSTOM_BRANCH}/${CUSTOM_COMMIT}/target/aws.greengrass.nucleus.zip"
+CUSTOM_URI = "${CUSTOM_BUCKET}/${CUSTOM_REPO}/${CUSTOM_BRANCH}/${CUSTOM_COMMIT}/target/aws.greengrass.nucleus.zip"
 
 S                          = "${WORKDIR}"
 GG_BASENAME                = "greengrass/v2"
 GG_ROOT                    = "${D}/${GG_BASENAME}"
 LIC_FILES_CHKSUM           = "file://LICENSE;md5=34400b68072d710fecd0a2940a0d1658"
-SRC_URI                    = "${CUSTOM_URI};name=payload; \
+SRC_URI                    = "s3://${CUSTOM_URI}; \
                               https://raw.githubusercontent.com/aws-greengrass/aws-greengrass-nucleus/main/LICENSE;name=license; \
                               file://greengrassv2-init.yaml \
                               "
