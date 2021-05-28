@@ -2,6 +2,7 @@
 SUMMARY     = "AWS IoT Greengrass Nucleus - Binary Distribution"
 DESCRIPTION = ""
 LICENSE     = "Apache-2"
+export BUCKET = "${BUCKET}"
 
 CUSTOM_REPO = "aws-greengrass/aws-greengrass-nucleus"
 CUSTOM_BRANCH = "main"
