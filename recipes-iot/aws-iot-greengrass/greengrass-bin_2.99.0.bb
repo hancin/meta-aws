@@ -12,7 +12,7 @@ S                          = "${WORKDIR}"
 GG_BASENAME                = "greengrass/v2"
 GG_ROOT                    = "${D}/${GG_BASENAME}"
 LIC_FILES_CHKSUM           = "file://LICENSE;md5=34400b68072d710fecd0a2940a0d1658"
-SRC_URI                    = "s3://${CUSTOM_URI}; \
+SRC_URI                    = "file://aws.greengrass.nucleus.zip; \
                               https://raw.githubusercontent.com/aws-greengrass/aws-greengrass-nucleus/main/LICENSE;name=license; \
                               file://greengrassv2-init.yaml \
                               "
