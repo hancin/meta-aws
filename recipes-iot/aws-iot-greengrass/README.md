@@ -6,6 +6,10 @@ See the AWS IoT Greengrass V1 section if you still require V1.
 
 ## AWS IoT Greengrass V2
 
+These images are provided for AWS IoT Greengrass V2:
+* `greengrass-bin`: This installs Greengrass v2 without a configuration file. This can be used if you plan to add logic to configure Greengrass when the device runs for the first time
+* `greengrass-bin-demo`: This installs Greengrass v2 and configures it to run using the provided certificates and configs. Use this if you want the image to be specific to a device, or to get started quickly.
+
 ### Add systemd
 
 Greengrass v2 runs more elegantly using systemd.  Add this to your
